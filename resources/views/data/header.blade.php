@@ -404,7 +404,7 @@
                         <div class="menu-title">Müşteriler</div>
                     </a>
                     <ul>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Müşteri Listesi</a>
+                        <li> <a href="{{route('musteri-liste')}}"><i class="bx bx-right-arrow-alt"></i>Müşteri Listesi</a>
                         </li>
                         <li> <a href="{{route('musteri-ekle')}}"><i class="bx bx-right-arrow-alt"></i>Yeni Müşteri</a>
                         </li>

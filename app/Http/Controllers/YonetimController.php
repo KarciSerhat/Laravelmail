@@ -30,5 +30,11 @@ class YonetimController extends Controller
      ]);
   return redirect()->route('musteri-ekle')->with('success','Müşteri Bilgisi Başarıyla Eklendi');
     }
+    public function musteriListe()
+    {
+
+        $musteriler=Musteriler::all();
+       return view('include.musteri-liste',compact('musteriler'));
+    }
 
 }
