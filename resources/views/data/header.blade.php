@@ -393,7 +393,7 @@
         <nav class="topbar-nav">
             <ul class="metismenu" id="menu">
                 <li>
-                    <a href="javascript:;" >
+                    <a href="{{route('index')}}" >
 
                         <div class="menu-title">Anasayfa</div>
                     </a>
@@ -406,7 +406,7 @@
                     <ul>
                         <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Müşteri Listesi</a>
                         </li>
-                        <li> <a href="#"><i class="bx bx-right-arrow-alt"></i>Yeni Müşteri</a>
+                        <li> <a href="{{route('musteri-ekle')}}"><i class="bx bx-right-arrow-alt"></i>Yeni Müşteri</a>
                         </li>
                     </ul>
                 </li>
