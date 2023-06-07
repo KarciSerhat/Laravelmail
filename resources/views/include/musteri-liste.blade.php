@@ -23,6 +23,9 @@
                 </div>
             </div>
    <hr/>
+            @if(session('success'))
+                <div class="alert alert-success">{{session('success')}}</div>
+            @endif
             <div class="card">
                 <div class="card-body">
                     <div class="table-responsive">
@@ -45,8 +48,8 @@
                                 <td>{{$musteri->mail}}</td>
                                 <td>{{$musteri->telefon}}</td>
                                 <td>
-                                    <a href="#">Düzenle</a>
-                                    <a href="#">Kaldır</a>
+                                    <a href="{{route('musteri-duzenle',$musteri->id)}}" class="btn btn-primary btn-sm px-1">Düzenle</a>
+                                    <a href="{{route('musteri-sil',$musteri->id)}}" class="btn btn-danger btn-sm px-1">Kaldır</a>
                                 </td>
                             </tr>
                                 @endforeach
