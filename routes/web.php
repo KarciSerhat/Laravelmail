@@ -28,3 +28,4 @@ Route::middleware([
 });
 Route::get('/index',[\App\Http\Controllers\YonetimController::class,'index'])->name("index");
 Route::get('/musteri-ekle',[\App\Http\Controllers\YonetimController::class,'musteriEkle'])->name("musteri-ekle");
+Route::post('/musteri-ekle-post',[\App\Http\Controllers\YonetimController::class,'musteriEklePost'])->name("musteri-ekle-post");

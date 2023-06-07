@@ -29,7 +29,17 @@
             <!--end breadcrumb-->
             <div class="row">
                 <div class="col">
-                    <form  action="" method="post">
+                    @if($errors->any())
+
+                     @foreach($errors->all() as $hatalar)
+                         <div class="alert alert-danger">{{$hatalar}}</div>
+                     @endforeach
+                    @endif
+                    @if(session('success'))
+                            <div class="alert alert-success">{{session('success')}}</div>
+                    @endif
+                    <form  action="{{route('musteri-ekle-post')}}" method="post">
+                        @csrf
                     <div class="card">
                         <div class="card-body">
                             <h6 class="mb-0 text-uppercase">Yeni Müşteri</h6>
